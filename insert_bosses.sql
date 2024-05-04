@@ -1,0 +1,17 @@
+INSERT INTO wow_db.bosses(raid_id, name, "order") VALUES
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Огненные Недра' AND location = 'Пылающие степи'), 'Рагнарос', 10),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Черный храм' AND location = 'Долина Призрачной Луны'), 'Иллидан Ярость Бури', 9),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Святилище Господства' AND location = 'Утроба'), 'Душа Нер''зула', 4),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Литейная клана Черной горы' AND location = 'Горгронд'), 'Железные леди', 9),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Испытание доблести' AND location = 'Штормхейм'), 'Хелия', 3),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Престол Гроз' AND location = 'Остров Грома'), 'Цзи-Кунь', 6),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Огненные Просторы' AND location = 'Гора Хиджал'), 'Рагнарос', 7),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Ульдуар' AND location = 'Грозовая Гряда'), 'Разрушитель ХТ-002', 4),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Анторус, Пылающий Трон' AND location = 'Пустоши Анторуса'), 'Ковен шиварр', 9),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Сердце Страха' AND location = 'Жуткие пустоши'), 'Императорский визирь Зор''лок', 1),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Хранилище Воплощений' AND location = 'Тальдразус'), 'Дафия Перерожденная', 5),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Логово Крыла Тьмы' AND location = 'Пылающие степи'), 'Нефариан', 8),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Душа Дракона' AND location = 'Танарис'), 'Хагара Владычица Штормов', 4),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Вечный дворец' AND location = 'Назжатар'), 'Великолепие Азшары', 3),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Крепость Бурь' AND location = 'Пустоверть'), 'Кель''тас Солнечный Скиталец', 4),
+((SELECT DISTINCT id FROM wow_db.raids WHERE name = 'Терраса Вечной Весны' AND location = 'Сокрытая лестница'), 'Лэй Ши', 3);
